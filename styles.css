@@ -1,26 +1,34 @@
 body {
-    background-color: #9b59b6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background: #f4f4f4;
 }
 
 #buttons {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .btn, .stop {
-    background-color: #5d2681;
-    color: white;
-    border: none;
-    padding: 15px 25px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #4CAF50;
+  color: white;
+  transition: 0.3s;
 }
 
 .btn:hover, .stop:hover {
-    background-color: #4a1e68;
+  background: #388E3C;
+}
+
+.stop {
+  background: #f44336;
 }
